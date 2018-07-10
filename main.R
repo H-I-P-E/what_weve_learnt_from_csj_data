@@ -1,13 +1,15 @@
 library(readr)
-
-
+library(dplyr)
+library(tidyr)
 
 lookups_folder <- 'lookups'
 data_folder <- 'data'
-
+doc_folder <- 'doc'
+figs_folder <- 'figs'
+cooked_data <- 'cooked_data'
 
 competencies_file <- file.path(lookups_folder, 'competencies.csv')
-post_code_locations_file <- file.path(lookups_folder, 'Postcode districts.csv')
+grade_lookup <- file.path(lookups_folder, 'grade_lookup.csv')
 competency_data_file <- file.path(data_folder, 'competency_data.csv')
 cleaned_data_csv <- file.path(data_folder, 'cleaned_advert_data.csv')
 role_data_csv <- file.path(data_folder, 'role_data.csv')
